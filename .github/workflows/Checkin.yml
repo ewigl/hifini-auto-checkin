@@ -1,0 +1,28 @@
+name: HIFINI-Auto-Checkin
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 8 * * *"
+
+jobs:
+  checkin:
+    runs-on: ubuntu-latest
+    environment: HIFINI
+    env:
+      COOKIE: ${{ secrets.COOKIE }}
+
+    strategy:
+      matrix:
+        node-version: [22.x]
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Checkin
+        shell: bash
+        run: |
+          node main.js
