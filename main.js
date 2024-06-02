@@ -40,6 +40,7 @@ function checkIn(cookie, sign) {
     .then((resJson) => {
       if (resJson.code === 0) {
         console.log("签到成功");
+        console.log(resJson.message);
       } else {
         console.log("签到失败");
         console.log(resJson.message);
