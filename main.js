@@ -38,12 +38,14 @@ function checkIn(cookie, sign) {
   })
     .then((res) => res.json())
     .then((resJson) => {
-      if (resJson.code === 0) {
-        console.log("签到成功");
+      if (resJson.code === "0") {
+        // console.log("签到成功");
         console.log(resJson.message);
+        //
       } else {
-        console.log("签到失败");
+        // console.log("签到失败");
         console.log(resJson.message);
+        //
       }
     });
 }
