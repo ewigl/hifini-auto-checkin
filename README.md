@@ -2,3 +2,4 @@
 
 - Github Actions Environment: HIFINI
 - HIFINI Secret: COOKIE
+- [Check Runs](https://github.com/ewigl/hifini-auto-checkin/actions/workflows/Checkin.yml)
