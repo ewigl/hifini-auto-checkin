@@ -1,5 +1,7 @@
 const signPageUrl = "https://www.hifini.com/sg_sign.htm";
 
+const responseSuccessCode = "0";
+
 function generateBaseHeaders(cookie) {
   return {
     Cookie: cookie,
@@ -38,7 +40,7 @@ function checkIn(cookie, sign) {
   })
     .then((res) => res.json())
     .then((resJson) => {
-      if (resJson.code === "0") {
+      if (resJson.code === responseSuccessCode) {
         // console.log("签到成功");
         console.log(resJson.message);
         //
