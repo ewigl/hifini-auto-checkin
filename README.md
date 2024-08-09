@@ -1,5 +1,7 @@
 ## [HIFINI](https://www.hifini.com/) 定时自动签到
 
+[![Doc](https://img.shields.io/badge/Doc-blue)](https://ewigl.github.io/notes/posts/202408/auto-checkin/)
+
 ### Github Actions
 
 - Github Actions Environment: HIFINI
