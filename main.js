@@ -11,20 +11,16 @@ function generateBaseHeaders(cookie) {
 }
 
 async function getSign(cookie) {
-  try {
-    const response = await fetch(signPageUrl, {
-      headers: generateBaseHeaders(cookie),
-    });
+  const response = await fetch(signPageUrl, {
+    headers: generateBaseHeaders(cookie),
+  });
 
-    const resText = await response.text();
+  const resText = await response.text();
 
-    const re = /var sign\s*=\s*"([^"]+)"/;
-    const sign = re.exec(resText)[1];
+  const re = /var sign\s*=\s*"([^"]+)"/;
+  const sign = re.exec(resText)[1];
 
-    return sign;
-  } catch (error) {
-    console.log(error);
-  }
+  return sign;
 }
 
 function checkIn(cookie, sign) {
