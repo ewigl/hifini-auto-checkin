@@ -14,6 +14,7 @@ jobs:
     environment: HIFINI
     env:
       COOKIE: ${{ secrets.COOKIE }}
+      SIGN: ${{ secrets.SIGN }}
 
     steps:
       - uses: actions/checkout@v4
