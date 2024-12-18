@@ -6,7 +6,9 @@ on:
     # UTC+8 00:00
     # - cron: "0 16 * * *"
     # UTC+8 08:00
-    - cron: "0 0 * * *"
+    # - cron: "0 0 * * *"
+    # UTC+8 10:00
+    - cron: "0 2 * * *"
 
 jobs:
   checkin:
