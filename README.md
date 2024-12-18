@@ -1,5 +1,7 @@
 ## HIFINI 音乐磁场 定时自动签到
 
+> 待更新
+
 [![文档](https://img.shields.io/badge/文档-blue)](https://ewigl.github.io/notes/posts/202410/github-actions/)
 
 ### 使用
