@@ -1,6 +1,6 @@
 ## HIFINI 音乐磁场 定时自动签到
 
-> 待更新
+> 由于 HIFINI 网站近期更新，签到需要额外的参数 `SIGN`。
 
 [![文档](https://img.shields.io/badge/文档-blue)](https://ewigl.github.io/notes/posts/202410/github-actions/)
 
@@ -13,7 +13,7 @@
 ### 环境变量
 
 - **Environments**: `HIFINI`
-- **Secrets**: `COOKIE`
+- **Secrets**: `COOKIE`、`SIGN`
 
 ### 相关
 
