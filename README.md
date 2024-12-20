@@ -2,7 +2,7 @@
 
 > 由于 HIFINI 网站近期更新，签到需要额外的参数 `SIGN`。
 
-[![文档](https://img.shields.io/badge/文档-blue)](https://ewigl.github.io/notes/posts/202410/github-actions/)
+[![文档](https://img.shields.io/badge/文档-blue)](https://ewigl.github.io/notes/posts/programming/github-actions/)
 
 ### 使用
 
@@ -17,4 +17,4 @@
 
 ### 相关
 
-- [HIFINI 音乐磁场 增强](https://github.com/ewigl/hus)：一键自动回帖，汇总网盘链接，自动填充网盘提取码。
+- [HIFINI 音乐磁场 增强](https://github.com/ewigl/hifini-enhanced)：一键自动回帖，汇总网盘链接，自动填充网盘提取码。
