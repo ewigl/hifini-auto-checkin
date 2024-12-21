@@ -10,12 +10,17 @@ function generateBaseHeaders(cookie) {
   };
 }
 
-function getSign() {
-  if (!process.env.SIGN) {
-    console.log("SIGN NOT FOUND");
-    process.exit(1);
-  }
-  return process.env.SIGN;
+async function getSign(cookie) {
+  const response = await fetch(signPageUrl, {
+    headers: generateBaseHeaders(cookie),
+  });
+
+  const resText = await response.text();
+
+  const re = /var sign\s*=\s*"([^"]+)"/;
+  const sign = re.exec(resText)[1];
+
+  return sign;
 }
 
 function checkIn(cookie, sign) {
@@ -52,7 +57,7 @@ async function main() {
     process.exit(1);
   }
 
-  let sign = getSign(cookie);
+  let sign = await getSign(cookie);
 
   checkIn(cookie, sign);
 }
