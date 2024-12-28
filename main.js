@@ -42,7 +42,7 @@ function checkIn(cookie, sign) {
         //
       } else {
         // console.log("签到失败");
-        console.log(resJson.message);
+        throw new Error(resJson.message);
         //
       }
     });
