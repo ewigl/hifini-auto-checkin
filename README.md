@@ -1,6 +1,8 @@
 ## HIFINI 音乐磁场 定时自动签到
 
-[![文档](https://img.shields.io/badge/文档-blue)](https://ewigl.github.io/notes/posts/programming/github-actions/)
+[![HIFINI-Auto-Checkin](https://github.com/ewigl/hifini-auto-checkin/actions/workflows/Checkin.yml/badge.svg)](https://github.com/ewigl/hifini-auto-checkin/actions/workflows/Checkin.yml)
+
+[![详细文档](https://img.shields.io/badge/详细文档-blue)](https://ewigl.github.io/notes/posts/programming/github-actions/)
 
 ### 使用
 
