@@ -42,6 +42,10 @@ function checkIn(cookie, sign) {
         //
       } else {
         // console.log("签到失败");
+        if (resJson.message === "今天已经签过啦！") {
+          console.log("已经签到过了");
+          return;
+        }
         throw new Error(resJson.message);
         //
       }
