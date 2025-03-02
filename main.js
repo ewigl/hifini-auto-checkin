@@ -41,11 +41,11 @@ function checkIn(cookie, sign) {
         console.log(resJson.message);
         //
       } else {
-        // console.log("签到失败");
         if (resJson.message === "今天已经签过啦！") {
-          console.log("已经签到过了");
+          console.log(resJson.message);
           return;
         }
+        // console.log("签到失败");
         throw new Error(resJson.message);
         //
       }
