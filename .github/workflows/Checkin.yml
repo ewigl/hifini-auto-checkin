@@ -26,3 +26,5 @@ jobs:
         shell: bash
         run: |
           node main.js
+
+      - uses: gautamkrishnar/keepalive-workflow@v2
