@@ -14,10 +14,15 @@ async function getSign(cookie) {
   const response = await fetch(signPageUrl, {
     headers: generateBaseHeaders(cookie),
   });
-
   const resText = await response.text();
 
   const re = /var sign\s*=\s*"([^"]+)"/;
+  const result = re.exec(resText);
+
+  if (!result) {
+    throw new Error("Cookie 配置有误, 提取 Sign 失败.");
+  }
+
   const sign = re.exec(resText)[1];
 
   return sign;
@@ -37,17 +42,13 @@ function checkIn(cookie, sign) {
     .then((res) => res.json())
     .then((resJson) => {
       if (resJson.code === responseSuccessCode) {
-        // console.log("签到成功");
         console.log(resJson.message);
-        //
       } else {
         if (resJson.message === "今天已经签过啦！") {
           console.log(resJson.message);
           return;
         }
-        // console.log("签到失败");
         throw new Error(resJson.message);
-        //
       }
     });
 }
