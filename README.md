@@ -6,7 +6,7 @@
 
 ### 环境变量
 
-- **Environments**: `HIFINI`
+- **Environments**: `HIFINI_COOKIE`
 - **Secrets**: `COOKIE`
 
 ### 使用方法
