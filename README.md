@@ -1,5 +1,7 @@
 ## HIFINI 音乐磁场 定时自动签到
 
+![Image](https://github.com/user-attachments/assets/a2b04a47-5c08-4ad6-8df7-8fccf9d49f4e)
+
 利用 Github Actions 定时任务实现自动签到。
 
 [![HIFINI-Auto-Checkin](https://github.com/ewigl/hifini-auto-checkin/actions/workflows/Checkin.yml/badge.svg)](https://github.com/ewigl/hifini-auto-checkin/actions/workflows/Checkin.yml)
