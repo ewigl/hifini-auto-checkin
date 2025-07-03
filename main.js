@@ -90,7 +90,7 @@ function checkIn(cookie, sign) {
 
 async function main() {
     let cookie;
-    if (process.env.hifi_COOKIE) {
+    if (process.env.HIFI_COOKIE) {
         cookie = process.env.hifi_COOKIE;
     } else {
         console.log("COOKIE NOT FOUND");
