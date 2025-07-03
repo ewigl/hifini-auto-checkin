@@ -1,4 +1,4 @@
-## HIFINI 音乐磁场 定时自动签到
+## ~~HIFINI 音乐磁场 定时自动签到~~
 
 ![Image](https://github.com/user-attachments/assets/a2b04a47-5c08-4ad6-8df7-8fccf9d49f4e)
 
