@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: HIFINI
     env:
-      COOKIE: ${{ secrets.COOKIES }}
+      COOKIES: ${{ secrets.COOKIES }}
 
     steps:
       - uses: actions/checkout@v4
