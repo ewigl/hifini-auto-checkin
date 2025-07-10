@@ -52,7 +52,7 @@ async function main() {
   if (process.env.COOKIES) {
     cookies = process.env.COOKIES;
   } else {
-    console.log("COOKIE NOT FOUND");
+    console.log("COOKIES NOT FOUND");
     process.exit(1);
   }
 
