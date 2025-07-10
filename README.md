@@ -1,19 +1,19 @@
 ## HIFITI 音乐磁场 定时自动签到
 
-利用 Github Actions 定时任务实现自动签到。
+利用 Github Actions 定时任务实现自动签到，支持多账号同时签到。
 
 [![HIFINI-Auto-Checkin](https://github.com/ewigl/hifini-auto-checkin/actions/workflows/Checkin.yml/badge.svg)](https://github.com/ewigl/hifini-auto-checkin/actions/workflows/Checkin.yml)
 
 ### 环境变量
 
 - **Environments**: `HIFINI`
-- **Secrets**: `COOKIE`
+- **Secrets**: `COOKIES`
 
 ### 使用方法
 
 1. Fork 此仓库。
 2. 在 fork 后的仓库中启用 Workflows。
-3. 配置环境变量。
+3. 配置环境变量，多个账号 cookie 之间使用英文`,`分隔。
 
 详细文档: https://ewigl.github.io/notes/posts/programming/github-actions/
 
