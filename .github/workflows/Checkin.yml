@@ -1,4 +1,4 @@
-name: HIFINI-Auto-Checkin
+name: HIFITI-Auto-Checkin
 
 on:
   workflow_dispatch:

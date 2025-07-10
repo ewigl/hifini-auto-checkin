@@ -1,4 +1,4 @@
-const signPageUrl = "https://www.hifini.com/sg_sign.htm";
+const signPageUrl = "https://www.hifiti.com/sg_sign.htm";
 
 const responseSuccessCode = "0";
 
@@ -6,29 +6,11 @@ function generateBaseHeaders(cookie) {
   return {
     Cookie: cookie,
     "User-Agent":
-      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
   };
 }
 
-async function getSign(cookie) {
-  const response = await fetch(signPageUrl, {
-    headers: generateBaseHeaders(cookie),
-  });
-  const resText = await response.text();
-
-  const re = /var sign\s*=\s*"([^"]+)"/;
-  const result = re.exec(resText);
-
-  if (!result) {
-    throw new Error("Cookie 配置有误, 提取 Sign 失败.");
-  }
-
-  const sign = re.exec(resText)[1];
-
-  return sign;
-}
-
-function checkIn(cookie, sign) {
+function checkIn(cookie) {
   fetch(signPageUrl, {
     method: "POST",
     headers: {
@@ -37,7 +19,6 @@ function checkIn(cookie, sign) {
       "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
       "X-Requested-With": "XMLHttpRequest",
     },
-    body: `sign=${sign}`,
   })
     .then((res) => res.json())
     .then((resJson) => {
@@ -62,9 +43,7 @@ async function main() {
     process.exit(1);
   }
 
-  let sign = await getSign(cookie);
-
-  checkIn(cookie, sign);
+  checkIn(cookie);
 }
 
 main();
