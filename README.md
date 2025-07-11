@@ -6,7 +6,24 @@
 
 ### 仓库变量
 
-- **COOKIES**：登陆 HIFITI 后，打开浏览器控制台，输入 `document.cookie`，回车。在字符串上右键，“复制字符串内容”即可得到 Cookie。多个账号 Cookie 之间使用英文逗号`,`分隔。
+- **ACCOUNTS**：账户信息，**多个**账户配置示例如下。推荐使用 [JSON 格式化工具](https://jsoneditoronline.org/) 进行编辑以避免格式出错。
+
+  登陆 HIFITI 后，打开浏览器控制台，输入 `document.cookie`，回车，在字符串上右键，“复制字符串内容”即可得到 Cookie。
+
+  **不要使用网站右上角的“退出”按钮退出登录！这会使 Cookie 失效，如果需要多个账户签到，可以使用无痕模式登录新账号或使用多个浏览器。**
+
+  ```json
+  [
+    {
+      "name": "这里填写账户备注",
+      "cookie": "这里填写 Cookie"
+    },
+    {
+      "name": "第 N 个账号",
+      "cookie": "这里填写 Cookie"
+    }
+  ]
+  ```
 
 ### 使用方法
 

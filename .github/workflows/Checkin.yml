@@ -11,7 +11,7 @@ jobs:
     name: Checkin
     runs-on: ubuntu-latest
     env:
-      COOKIES: ${{ secrets.COOKIES }}
+      ACCOUNTS: ${{ secrets.ACCOUNTS }}
 
     steps:
       - uses: actions/checkout@v4
