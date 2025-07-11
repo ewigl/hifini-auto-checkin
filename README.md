@@ -6,7 +6,7 @@
 
 ### 仓库变量
 
-- **COOKIES**：多个账号 cookie 之间使用英文逗号`,`分隔。
+- **COOKIES**：登陆 HIFITI 后，打开浏览器控制台，输入 `document.cookie`，回车。在字符串上右键，“复制字符串内容”即可得到 Cookie。多个账号 Cookie 之间使用英文逗号`,`分隔。
 
 ### 使用方法
 
