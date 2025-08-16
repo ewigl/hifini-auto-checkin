@@ -4,7 +4,9 @@ const responseSuccessCode = "0";
 async function checkIn(account) {
   console.log(`【${account.name}】: 开始签到...`);
 
-  const response = await fetch(signPageUrl, {
+  const signInURL = account.chenckInUrl ? account.chenckInUrl : signPageUrl;
+
+  const response = await fetch(signInURL, {
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
