@@ -1,4 +1,4 @@
-## HIFITI 音乐磁场 定时自动签到
+## HIFINI 音乐磁场 定时自动签到
 
 利用 Github Actions 定时任务实现自动签到，支持多账号同时签到。
 
@@ -6,11 +6,12 @@
 
 ### 仓库变量
 
-- **ACCOUNTS**：账户信息，**多个**账户配置示例如下。推荐使用 [JSON 格式化工具](https://jsoneditoronline.org/) 进行编辑以避免格式出错。
+- **ACCOUNTS**：账户信息。推荐使用 [JSON 格式化工具](https://jsoneditoronline.org/) 进行编辑以及格式化以避免格式出错。
 
-  登陆 HIFITI 后，打开浏览器控制台，输入 `document.cookie`，回车，在字符串上右键，“复制字符串内容”即可得到 Cookie。
+  登陆 HIFITI (hifiti.com) 后，打开浏览器控制台，输入 `document.cookie`，回车，在字符串上右键，“复制字符串内容”即可得到 Cookie。
+  **使用网站右上角的“退出”按钮退出登录会使 Cookie 失效。**
 
-  **不要使用网站右上角的“退出”按钮退出登录！这会使 Cookie 失效，如果需要多个账户签到，可以使用无痕模式登录新账号或使用多个浏览器。**
+  配置示例如下。
 
   ```json
   [
@@ -19,8 +20,8 @@
       "cookie": "这里填写 Cookie"
     },
     {
-      "name": "第 N 个账号",
-      "cookie": "这里填写 Cookie"
+      "name": "这里填写账户备注,只有一个账号可以删除这一条{}记录",
+      "cookie": "这里填写 Cookie，有两个以上账号自行在下方添加新的{}记录。"
     }
   ]
   ```
