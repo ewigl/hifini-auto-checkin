@@ -1,10 +1,10 @@
-const signPageUrlForHIFITI = "https://www.hifiti.com/sg_sign.htm";
+const signPageUrl = "https://www.hifiti.com/sg_sign.htm";
 const responseSuccessCode = "0";
 
-async function checkInForHIFITI(account) {
+async function checkIn(account) {
   console.log(`【${account.name}】: 开始签到...`);
 
-  const response = await fetch(signPageUrlForHIFITI, {
+  const response = await fetch(signPageUrl, {
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
@@ -33,45 +33,11 @@ async function checkInForHIFITI(account) {
   }
 }
 
-async function checkInForHIFINICN(account) {
-  console.log(`【${account.name}】: 开始签到...`);
-
-  const response = await fetch(account.checkInUrl, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-      "X-Requested-With": "XMLHttpRequest",
-      "User-Agent":
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
-      Cookie: account.cookie,
-    },
-  });
-
-  if (!response.ok) {
-    throw new Error(`网络请求出错 - ${response.status}`);
-  }
-
-  const responseText = await response.text();
-
-  if (responseText.indexOf("签到成功") !== -1) {
-    console.log(`【${account.name}】: 签到成功。`);
-    return responseText;
-  } else {
-    if (responseText.indexOf("今天已经签过啦！") !== -1) {
-      console.log(`【${account.name}】: ${responseText}`);
-      return responseText;
-    }
-    throw new Error(`签到失败: ${responseText}`);
-  }
-}
-
 // 处理
 async function processSingleAccount(account) {
-  if (account.checkInUrl) {
-    return await checkInForHIFINICN(account);
-  } else {
-    return await checkInForHIFITI(account);
-  }
+  const checkInResult = await checkIn(account);
+
+  return checkInResult;
 }
 
 async function main() {
