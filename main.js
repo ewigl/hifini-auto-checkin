@@ -11,7 +11,7 @@ async function checkIn(account) {
       "X-Requested-With": "XMLHttpRequest",
       "User-Agent":
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
-      Cookie: account.cookie,
+      Cookie: account._2BDxJNY2VKhEMWZ1V_2FixcdgZ7IWWOT9UWdDh2mPjB2UebTH_2Fdm8XYIKuRJFUMXV_2BESaJxKFj10z6ZgHaUksKckK3Bs8M_3D,
     },
   });
 
