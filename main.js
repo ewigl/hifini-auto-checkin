@@ -59,6 +59,7 @@ async function main() {
   const results = await Promise.allSettled(allPromises);
 
   console.log(`\n======== 签到结果 ========\n`);
+  let hasError = false;
 
   results.forEach((result, index) => {
     const accountName = accounts[index].name;
@@ -66,8 +67,13 @@ async function main() {
       console.log(`【${accountName}】: ✅ ${result.value}`);
     } else {
       console.error(`【${accountName}】: ❌ ${result.reason.message}`);
+      hasError = true;
     }
   });
+
+  if (hasError) {
+    process.exit(1);
+  }
 }
 
 main();
