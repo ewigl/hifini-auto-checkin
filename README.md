@@ -1,6 +1,8 @@
-## HIFINI 音乐磁场 定时自动签到
+## ~~HIFINI 音乐磁场 定时自动签到~~
 
-利用 Github Actions 定时任务实现自动签到，支持多账号同时签到。仅支持 `hifiti.com`.
+(已失效) hifiti.com 已屏蔽非中国 ip 访问网站。
+
+~~利用 Github Actions 定时任务实现自动签到，支持多账号同时签到。仅支持 `hifiti.com`.~~
 
 [![HIFINI-Auto-Checkin](https://github.com/ewigl/hifini-auto-checkin/actions/workflows/Checkin.yml/badge.svg)](https://github.com/ewigl/hifini-auto-checkin/actions/workflows/Checkin.yml)
 
