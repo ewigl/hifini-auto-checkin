@@ -1,8 +1,6 @@
-## ~~HIFINI 音乐磁场 定时自动签到~~
+## HIFINI 音乐磁场 定时自动签到
 
-(已失效) hifiti.com 已屏蔽非中国 ip 访问网站。
-
-~~利用 Github Actions 定时任务实现自动签到，支持多账号同时签到。仅支持 `hifiti.com`.~~
+利用 Github Actions 定时任务实现自动签到，支持多账号同时签到。仅支持 `hifiti.com`.
 
 [![HIFINI-Auto-Checkin](https://github.com/ewigl/hifini-auto-checkin/actions/workflows/Checkin.yml/badge.svg)](https://github.com/ewigl/hifini-auto-checkin/actions/workflows/Checkin.yml)
 
@@ -37,7 +35,7 @@
 2. 在 fork 后的仓库中启用 Actions。
 3. 配置仓库变量。
 
-详细文档: https://ewigl.github.io/notes/posts/programming/github-actions/
+详细文档: https://ewigl.github.io/projects/github-actions-tasks/
 
 ### 注意事项
 
