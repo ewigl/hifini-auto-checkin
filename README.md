@@ -4,11 +4,19 @@
 
 [![HIFINI-Auto-Checkin](https://github.com/ewigl/hifini-auto-checkin/actions/workflows/Checkin.yml/badge.svg)](https://github.com/ewigl/hifini-auto-checkin/actions/workflows/Checkin.yml)
 
+### 使用方法
+
+1. Fork 此仓库。
+2. 在 fork 后的仓库中启用 Actions。
+3. 配置仓库变量。
+
+详细文档: https://ewigl.github.io/projects/github-actions-tasks/
+
 ### 仓库变量
 
-- **ACCOUNTS**：账户信息。推荐使用 [JSON 格式化工具](https://jsoneditoronline.org/) 进行编辑以及格式化以避免格式出错。
+- **ACCOUNTS**：账户信息。推荐使用 JSON 编辑工具编辑以避免格式出错。
 
-  配置示例如下。
+  配置示例:
 
   ```json
   [
@@ -23,22 +31,18 @@
   ]
   ```
 
+  获取 Cookie: 
+  
+  > [!NOTE]
+  > 使用网站右上角的“退出”按钮退出登录会使 Cookie 失效。
+  
   登陆 hifiti.com 后，打开浏览器控制台，在网络监控界面获取 Cookie，确保 Cookie 包含 bbs_token 与 bbs_sid 两个字段。
+
 
   ![获取 Cookie](https://raw.githubusercontent.com/ewigl/hifini-auto-checkin/main/imgs/001.png)
 
-  **使用网站右上角的“退出”按钮退出登录会使 Cookie 失效。**
-
 - **TELEGRAM_TOKEN**: （可选）Telegram 通知的 Bot Token。
 - **TELEGRAM_TO**: （可选）Telegram 通知的 Chat ID。
-
-### 使用方法
-
-1. Fork 此仓库。
-2. 在 fork 后的仓库中启用 Actions。
-3. 配置仓库变量。
-
-详细文档: https://ewigl.github.io/projects/github-actions-tasks/
 
 ### 注意事项
 
