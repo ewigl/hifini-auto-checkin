@@ -33,11 +33,7 @@
 
   获取 Cookie: 
   
-  > [!NOTE]
-  > 使用网站右上角的“退出”按钮退出登录会使 Cookie 失效。
-  
-  登陆 hifiti.com 后，打开浏览器控制台，在网络监控界面获取 Cookie，确保 Cookie 包含 bbs_token 与 bbs_sid 两个字段。
-
+  登陆 hifiti.com 后，打开浏览器控制台，在网络监控界面获取 Cookie，确保 Cookie 包含 bbs_token 与 bbs_sid 两个字段。使用网站右上角的“退出”按钮退出登录会使 Cookie 失效。
 
   ![获取 Cookie](https://raw.githubusercontent.com/ewigl/hifini-auto-checkin/main/imgs/001.png)
 
