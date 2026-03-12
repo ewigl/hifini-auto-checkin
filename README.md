@@ -1,6 +1,6 @@
 ## HIFINI 音乐磁场 定时自动签到
 
-利用 Github Actions 定时任务实现自动签到，支持多账号同时签到。仅支持 `hifiti.com`.
+支持多账号同时签到。支持 Telegram 通知。仅支持 `hifiti.com`.
 
 [![HIFINI-Auto-Checkin](https://github.com/ewigl/hifini-auto-checkin/actions/workflows/Checkin.yml/badge.svg)](https://github.com/ewigl/hifini-auto-checkin/actions/workflows/Checkin.yml)
 
@@ -28,6 +28,9 @@
   ![获取 Cookie](https://raw.githubusercontent.com/ewigl/hifini-auto-checkin/main/imgs/001.png)
 
   **使用网站右上角的“退出”按钮退出登录会使 Cookie 失效。**
+
+- **TELEGRAM_TOKEN**: （可选）Telegram 通知的 Bot Token。
+- **TELEGRAM_TO**: （可选）Telegram 通知的 Chat ID。
 
 ### 使用方法
 
