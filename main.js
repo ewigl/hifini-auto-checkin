@@ -56,8 +56,9 @@ async function main() {
 
     accounts = JSON.parse(process.env.ACCOUNTS);
   } catch (error) {
-    const message = `❌ ${error.message.includes("JSON") ? "账户信息配置格式错误。" : error.message
-      }`;
+    const message = `❌ ${
+      error.message.includes("JSON") ? "账户信息配置格式错误。" : error.message
+    }`;
     console.error(message);
     setGitHubOutput("result", message);
     process.exit(1);

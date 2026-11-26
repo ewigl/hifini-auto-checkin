@@ -31,8 +31,8 @@
   ]
   ```
 
-  获取 Cookie: 
-  
+  获取 Cookie:
+
   登陆 hifiti.com 后，打开浏览器控制台，在网络监控界面获取 Cookie，确保 Cookie 包含 bbs_token 与 bbs_sid 两个字段。使用网站右上角的“退出”按钮退出登录会使 Cookie 失效。
 
   ![获取 Cookie](https://raw.githubusercontent.com/ewigl/hifini-auto-checkin/main/imgs/001.png)
@@ -43,7 +43,3 @@
 ### 注意事项
 
 根据 [GitHub 的政策](https://docs.github.com/zh/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/disabling-and-enabling-a-workflow?tool=webui)，当 60 天内未发生仓库活动时，GitHub 会自动禁用 Actions 定时任务。需要再次手动启用。
-
-### 相关推荐
-
-- [HIFINI 音乐磁场 增强](https://github.com/ewigl/hifini-enhanced)：一键自动回帖，汇总网盘链接，自动填充网盘提取码。
